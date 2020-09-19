@@ -37,7 +37,7 @@ class FurnaceUpgradeMenu
         $menu->readonly();
         $menu->setListener([$this, "onClick"]);
         for ($i=0; $i < 27; $i++) { 
-            $menu->getInventory()->setItem($i, Item::get(160,8,1)->setCustomName("A"));
+            $menu->getInventory()->setItem($i, Item::get(160,8,1)->setCustomName(""));
         }
         $menu->getInventory()->setItem(11, Item::get(61,0,1)->setCustomName(C::YELLOW . "Furnace Owner: " . C::GRAY . $owner));
         $menu->getInventory()->setItem(13, Item::get(384,0,1)->setCustomName(C::YELLOW . "Furnace Level: " . C::GRAY . $level));
