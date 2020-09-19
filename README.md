@@ -2,7 +2,7 @@
 
 ##### Furnace Upgrade Menu:
 
-
+![Ekran görüntüsü 2020-09-19 113443](https://user-images.githubusercontent.com/49764317/93663027-5143d280-fa6d-11ea-9494-1e5f5674aeea.png)
 
 ##### Level-1:
 
