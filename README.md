@@ -30,3 +30,4 @@
 
 ##### Screen Shots:
 
+![Ekran görüntüsü 2020-09-19 113429](https://user-images.githubusercontent.com/49764317/93663015-340f0400-fa6d-11ea-98ec-edecfb6b0077.png)
