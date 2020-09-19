@@ -1,0 +1,5 @@
+name: Furnace
+main: Furnace\BaseFurnace
+api: 3.9.4
+author: ByAlperenS
+version: 1.0
