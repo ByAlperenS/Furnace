@@ -46,6 +46,7 @@ use pocketmine\event\server\DataPacketReceiveEvent;
 use pocketmine\event\server\DataPacketSendEvent;
 use pocketmine\network\mcpe\protocol\ContainerClosePacket;
 use Furnace\Menus\FurnaceUpgradeMenu;
+use onebone\economyapi\EconomyAPI;
 
 class BaseFurnace extends PluginBase implements Listener
 {
@@ -69,6 +70,11 @@ class BaseFurnace extends PluginBase implements Listener
 
     public function onEnable()
     {
+        $economy = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
+        if (!$economy instanceof EconomyAPI) {
+            $this->getLogger()->critical("You need EconomyAPI (https://poggit.pmmp.io/p/EconomyAPI/)");
+            $this->getServer()->getPluginManager()->disablePlugin($this);
+        }
         if(!InvMenuHandler::isRegistered()){
             InvMenuHandler::register($this);
         }
