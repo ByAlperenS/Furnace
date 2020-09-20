@@ -46,6 +46,9 @@ use pocketmine\event\server\DataPacketReceiveEvent;
 use pocketmine\event\server\DataPacketSendEvent;
 use pocketmine\network\mcpe\protocol\ContainerClosePacket;
 use Furnace\Menus\FurnaceUpgradeMenu;
+
+// Needs EconomyAPI to work
+
 use onebone\economyapi\EconomyAPI;
 
 class BaseFurnace extends PluginBase implements Listener
