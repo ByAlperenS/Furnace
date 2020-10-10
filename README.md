@@ -1,4 +1,4 @@
-# Furnace Version 1
+# Furnace Version 1.0
 
 _***Needs EconomyAPI to work***_
 
