@@ -131,8 +131,10 @@ class BaseFurnace extends PluginBase implements Listener
                     $this->config->save();
                     $p->sendMessage($this->title . C::GRAY . "Furnace Level Have Been Reset !");
                 }else {
-                    $e->setCancelled();
-                    $p->sendMessage($this->title . C::GRAY . "You Are Not The Owner Of This Furnace !");
+                    if (!$p->isOp()) {
+                        $e->setCancelled();
+                        $p->sendMessage($this->title . C::GRAY . "You Are Not The Owner Of This Furnace !");
+                    }
                 }   
             }
         }
