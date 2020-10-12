@@ -27,6 +27,7 @@ use pocketmine\event\block\BlockBreakEvent as BBE;
 use pocketmine\event\block\BlockPlaceEvent as BPE;
 use pocketmine\nbt\tag\ByteArrayTag;
 use pocketmine\event\player\PlayerInteractEvent as PIE;
+use pocketmine\event\player\{PlayerJoinEvent as PJE, PlayerQuitEvent as PQE};
 use pocketmine\item\Item;
 use pocketmine\level\Position;
 use pocketmine\block\Block;
@@ -97,6 +98,13 @@ class BaseFurnace extends PluginBase implements Listener
             "Owner" => $p->getName(),
             "Coordinates" => $coordinate
         ]);
+        $this->config->save();
+    }
+
+    public function onPlayerQuit(PQE $e)
+    {
+        $p = $e->getPlayer();
+
         $this->config->save();
     }
 
