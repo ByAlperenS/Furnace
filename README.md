@@ -32,3 +32,5 @@ _**Furnace Upgrade Menu Opens If Wooden Is Broken By Pickaxe**_
 
 
 _**YouTube Video Link: https://www.youtube.com/watch?v=NMgdyIcKSgc&t=3s**_
+
+PHAR: https://poggit.pmmp.io/ci/ByAlperenS/Furnace/Furnace
