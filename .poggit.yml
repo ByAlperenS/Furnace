@@ -5,4 +5,7 @@ branches:
 projects:
   Furnace:
     path: ""
+    libs: 
+    - src: muqsit/InvMenu/InvMenu
+      version: ^2.1.0
 ...
